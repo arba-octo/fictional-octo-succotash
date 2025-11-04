@@ -1,0 +1,80 @@
+# --- БАЗА ---
+# По умолчанию считаем текстом и нормализуем к LF в репозитории
+* text=auto eol=lf
+
+# --- КОД / ТЕКСТ (LF) ---
+*.ts     text eol=lf
+*.tsx    text eol=lf
+*.js     text eol=lf
+*.mjs    text eol=lf
+*.cjs    text eol=lf
+*.jsx    text eol=lf
+*.json   text eol=lf
+*.jsonc  text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.md     text eol=lf
+*.mdx    text eol=lf
+*.css    text eol=lf
+*.scss   text eol=lf
+*.sass   text eol=lf
+*.less   text eol=lf
+*.html   text eol=lf
+*.svg    text eol=lf
+*.env    text eol=lf
+.env.*   text eol=lf
+*.gitignore text eol=lf
+*.gitattributes text eol=lf
+*.editorconfig text eol=lf
+*.prettierrc    text eol=lf
+*.eslintrc      text eol=lf
+*.eslint*       text eol=lf
+*.stylelintrc   text eol=lf
+*.nvmrc         text eol=lf
+*.browserslistrc text eol=lf
+Dockerfile      text eol=lf
+
+# Лок-файлы как текст (для стабильных диффов) + LF
+package-lock.json text eol=lf
+pnpm-lock.yaml    text eol=lf
+yarn.lock         text eol=lf
+bun.lockb         -text
+
+# --- СКРИПТЫ ---
+*.sh   text eol=lf
+*.bash text eol=lf
+*.cmd  text eol=crlf
+*.bat  text eol=crlf
+*.ps1  text eol=crlf
+
+# --- БИНАРНИКИ / АССЕТЫ ---
+# Не трогаем окончания строк и кодировки
+*.png  -text
+*.jpg  -text
+*.jpeg -text
+*.gif  -text
+*.webp -text
+*.avif -text
+*.ico  -text
+*.pdf  -text
+*.mp4  -text
+*.mp3  -text
+*.mov  -text
+*.zip  -text
+*.gz   -text
+*.tgz  -text
+*.tar  -text
+*.7z   -text
+
+# Шрифты
+*.woff  -text
+*.woff2 -text
+*.ttf   -text
+*.otf   -text
+*.eot   -text
+
+# --- GIT ARCHIVE ---
+# (опционально) не включать лишние файлы при git archive
+.gitignore     export-ignore
+.gitattributes export-ignore
+.editorconfig  export-ignore

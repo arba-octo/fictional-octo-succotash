@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# --- Editors / IDE ---
+.idea/
+.vscode/
+*.swp
+*.swo
+/app/generated/prisma
+
+certificates
