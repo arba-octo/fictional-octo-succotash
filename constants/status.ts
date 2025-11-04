@@ -1,0 +1,12 @@
+export const STATUS_INIT = 'init';
+export const STATUS_PLAY = 'play';
+export const STATUS_PAUSE = 'pause';
+export const STATUS_SUCCESS = 'success';
+export const STATUS_ERROR = 'error';
+export const STATUS_FAIL = 'fail';
+export const STATUS_LOADING = 'loading';
+export const STATUS_QUEUED = 'queued';
+export const STATUS_QUEUE = 'queue';
+export const STATUS_PROCESSING = 'processing';
+export const STATUS_RUNNING = 'running';
+export const STATUS_OK = 'OK';
